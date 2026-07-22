@@ -412,6 +412,7 @@ button:hover{
     flex-direction:column;
 }
 .card3{
+     animation: heroZoomout 12s ease-in-out infinite alternate;
     background-image:url("3.jpg");
 
     background-size:cover;
@@ -444,7 +445,18 @@ footer{
 /* ==========================
    Animation
 ========================== */
+.hero{
+    animation: heroZoom 12s ease-in-out infinite alternate;
+}
 
+@keyframes heroZoom{
+    from{
+        background-size:100%;
+    }
+    to{
+        background-size:110%;
+    }
+}
 @keyframes fadeUp{
 
     from{
