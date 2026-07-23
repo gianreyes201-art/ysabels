@@ -237,7 +237,7 @@ button:hover{
          0px  3px 8px rgba(0,0,0,.5);
 }
 
-{
+.card2{
 
     width:360px;
 
@@ -356,21 +356,6 @@ button:hover{
     align-items:center;
     flex-direction:column;
 }
-/* ==========================
-   Footer
-========================== */
-
-footer{
-
-    background:#2A1A13;
-
-    color:#DDD;
-
-    text-align:center;
-
-    padding:30px;
-}
-
 /* ==========================
    Animation
 ========================== */
@@ -545,3 +530,16 @@ footer{
     color:#D4A373;
     margin-bottom:20px;
 }
+/* ==========================
+   Footer
+========================== */
+
+footer {
+    background-color: #2A1A13 !important;
+    color: #DDD !important;
+    text-align: center !important;
+    padding: 30px !important;
+    width: 100%;
+    box-sizing: border-box;
+}
+
