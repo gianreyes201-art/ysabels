@@ -237,7 +237,7 @@ button:hover{
          0px  3px 8px rgba(0,0,0,.5);
 }
 
-.card2{
+{
 
     width:360px;
 
@@ -355,7 +355,7 @@ button:hover{
     justify-content:center;
     align-items:center;
     flex-direction:column;
-
+}
 /* ==========================
    Footer
 ========================== */
