@@ -134,6 +134,23 @@ nav ul li a:hover,
     animation:fadeUp 1.4s ease;
 }
 
+.cake-page .hero{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    padding-top: 100px;
+}
+
+.cake-page .hero h1{
+    margin: 0;
+    font-size: 90px;
+}
+
+.cake-page .hero p{
+    margin-top: 15px;
+}
+
 /* ==========================
    Button
 ========================== */
@@ -251,36 +268,6 @@ button:hover{
          0px  3px 8px rgba(0,0,0,.5);
 }
 
-.card3{
-
-    width:360px;
-
-    padding:40px;
-
-    border-radius:20px;
-
-    background:white;
-
-    box-shadow:0 15px 40px rgba(0,0,0,.08);
-
-    transition:.35s;
-
-    text-align:center;
-}
-.card3 h2{
-
-    color:#8B5E3C;
-
-    margin-bottom:20px;
-
-    font-size:30px;
-    text-shadow:
-        -2px -2px 0 #000,
-         2px -2px 0 #000,
-        -2px  2px 0 #000,
-         2px  2px 0 #000,
-         0px  3px 8px rgba(0,0,0,.5);
-}
 .card1:hover{
 
     transform:translateY(-10px);
@@ -347,48 +334,6 @@ button:hover{
     font-size:17px;
 }
 
-.card3:hover{
-
-    transform:translateY(-10px);
-
-    box-shadow:0 25px 50px rgba(0,0,0,.15);
-}
-
-.card3 h2{
-
-    color:#8B5E3C;
-
-    margin-bottom:20px;
-
-    font-size:30px;
-}
-
-.card3 p{
-
-    color:#666;
-
-    line-height:1.8;
-
-    font-size:17px;
-}
-.card3 h2{
-
-    color:#8B5E3C;
-
-    margin-bottom:20px;
-
-    font-size:30px;
-}
-
-.card3 p{
-
-    color:#666;
-
-    line-height:1.8;
-
-    font-size:17px;
-}
-
 .card1{
     background-image:url("6.jpg");
 
@@ -410,22 +355,6 @@ button:hover{
     justify-content:center;
     align-items:center;
     flex-direction:column;
-}
-.card3{
-     animation: heroZoomout 12s ease-in-out infinite alternate;
-    background-image:url("3.jpg");
-
-    background-size:cover;
-    background-position:center;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    flex-direction:column;
-}
-
-
-
 
 /* ==========================
    Footer
@@ -500,4 +429,119 @@ footer{
         font-size:45px;
     }
 
+}
+/* ==========================
+   Cake Selection
+========================== */
+
+.cake-page .hero{
+    height:50vh;      /* Instead of 100vh */
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding-top:100px;
+}
+.cake-selection{
+    padding:80px 8%;
+
+    background:
+        linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+        url("4.png");
+
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+}
+
+.cake-selection h2{
+
+    text-align:center;
+    font-size:40px;
+    color:#FFF4DD;
+
+    margin-bottom:50px;
+
+    text-shadow:
+        -2px -2px 3px rgba(0,0,0,.8),
+         2px -2px 3px rgba(0,0,0,.8),
+        -2px  2px 3px rgba(0,0,0,.8),
+         2px  2px 3px rgba(0,0,0,.8);
+
+}
+
+.cake-grid{
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+
+    gap:35px;
+
+}
+
+.cake-card{
+    perspective:1000px;
+    height:420px;
+}
+
+.cake-inner{
+    position:relative;
+    width:100%;
+    height:100%;
+    transition:transform .7s;
+    transform-style:preserve-3d;
+}
+
+.cake-card:hover .cake-inner{
+    transform:rotateY(180deg);
+}
+
+.cake-front,
+.cake-back{
+    position:absolute;
+    width:100%;
+    height:100%;
+    border-radius:20px;
+    overflow:hidden;
+    backface-visibility:hidden;
+}
+
+/* Front */
+.cake-front{
+  
+    backdrop-filter:blur(12px);
+}
+
+.cake-front img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+}
+
+.cake-front h3{
+    text-align:center;
+    padding:20px;
+    color:white;
+}
+
+/* Back */
+.cake-back{
+    background:rgba(35,20,15,.95);
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    padding:25px;
+    transform:rotateY(180deg);
+    text-align:center;
+}
+
+.cake-back p{
+    margin:20px 0;
+    line-height:1.7;
+}
+
+.cake-back h2{
+    color:#D4A373;
+    margin-bottom:20px;
 }
