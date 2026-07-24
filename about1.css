@@ -34,6 +34,14 @@ body{
     background-attachment:fixed;
 }
 
+.contactus{  background:
+        linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+        url("4.png");
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+}
+
 /* ==========================
    Navigation
 ========================== */
@@ -110,17 +118,81 @@ nav a:hover,
 
     padding-top:100px;
 }
-
-.hero h1{
-    font-family:'Parisienne',cursive;
-    font-size:90px;
-    color:#D4A373;
+/* Design above */
+.contact-info h1::before {
+ 
+    display: block;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    color: #D4A373;
+    line-height: 1;
+    margin-bottom: 5px;
 }
 
+/* Design below */
+.contact-info h1::after {: 
+    display: block;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    color: #D4A373;
+    line-height: 1;
+    margin-top: 5px;
+}
+.hero h1{
+    font-family:'Parisienne',cursive;
+    font-size:85px;
+    color:#D4A373;
+    margin-top: 70px;
+}
+.contact-info h1{
+    font-family:'Parisienne',cursive;
+    font-size:85px;
+    color:#D4A373;
+    margin-top: 70px;
+    text-align: center;
+    line-height: -10;
+}
+.contact-info p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #FFF4DD;
+    max-width: 900px;
+    margin: 0 auto 80px;
+    text-align: center;
+    line-height: 1.6;
+    line-height: -20;
+    
+}
+.contact-phone p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color:  #FFF4DD;
+    max-width: 900px;
+    margin: 0 auto 80px;
+    text-align: left;
+    margin-bottom: -5px;
+}
+.contact-details{
+    background: rgba(255, 255, 255, 0.2);
+    padding: 25px;
+    border-radius: 15px;
+    width: 900px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+        max-width: 900px;
+    margin: 0 auto 80px;
+    text-align: left;
+    margin-bottom: -5px;
+}
+.contact-details i{
+    font-size: 25px;
+    margin-right: 12px;
+    color: blue;
+}
 .hero p{
-    font-size:18px;
+    font-size:30px;
     color:#FFF4DD;
-
     margin-top:-30px;
     letter-spacing:2px;
 
@@ -133,13 +205,24 @@ nav a:hover,
 
 .cake-selection{
     padding:40px 8% 80px;
+    
 }
 
 .cake-selection h2{
     text-align:center;
     font-size:40px;
     color:#FFF4DD;
-    margin-bottom:50px;
+    margin-bottom: -0px;
+    font-family:'Parisienne',cursive;
+    color:#D4A373;
+}
+.cake-info {
+    text-align:center;
+    font-size:40px;
+    color:#FFF4DD;
+    margin-bottom: -0px;
+    font-family:'Parisienne',cursive;
+    color:#D4A373;
 }
 
 /* ==========================
@@ -267,6 +350,7 @@ nav a:hover,
 .cake-back h3{
     font-size:20px;
     margin-bottom:15px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .cake-back p{
@@ -284,7 +368,7 @@ nav a:hover,
     color:#D4A373;
 
     font-size:34px;
-
+    font-family: 'Poppins', sans-serif;;
     margin-top:10px;
 
 }

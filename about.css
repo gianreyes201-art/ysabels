@@ -124,8 +124,8 @@ nav ul li a:hover,
 }
 
 .hero p{
-
-    font-size:18px;
+    font-family:'Parisienne',cursive;
+    font-size:40px;
     color:#FFF4DD;
 
     margin-top:-30px;
@@ -208,9 +208,9 @@ button:hover{
 .card1{
 
     width:360px;
-
+    height: 360px;
     padding:40px;
-
+    margin-top: -65px;
     border-radius:20px;
 
     background:white;
@@ -240,9 +240,9 @@ button:hover{
 .card2{
 
     width:360px;
-
+    height: 360px;
     padding:40px;
-
+    margin-top: -65px;
     border-radius:20px;
 
     background:white;
